@@ -10,3 +10,5 @@ menu = "main"
 
 This is the content and more of it like magic
 and here we can change the content a bit
+
+{{< schedule >}}
