@@ -3,6 +3,7 @@ date = "2016-10-20T19:57:00+00:00"
 day = "monday"
 draft = true
 title = "the afro cuban lounge"
+menu = "main"
 
 +++
 # The Afro Cuban Lounge
