@@ -8,6 +8,16 @@
 
 <header>
   {{ with .Site.Title }}<h1>{{ . }}</h1>{{ end }}
+  <nav class="site-nav">
+    {{ $currentNode := . }}
+    <ul>
+      {{ range .Site.Menus.events }}
+      <li>
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+  </nav>
 </header>
 
 {{ block "main" . }}
