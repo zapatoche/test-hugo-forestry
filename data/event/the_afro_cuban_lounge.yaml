@@ -1,6 +1,6 @@
 name: The Afro Cuban Lounge
 "Short Description": "He is a **jolly good** fellow."
-classes:
+schedule:
   beginners:
     start: "14:00"
     end: "15:00"

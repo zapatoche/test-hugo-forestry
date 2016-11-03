@@ -6,5 +6,6 @@ title: "the afro cuban lounge"
 
 # this the Afro Cuban lounge page and it's well good
 
+{{< schedule >}}
 
-
+lorem ipsum

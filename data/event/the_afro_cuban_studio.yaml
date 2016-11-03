@@ -12,7 +12,7 @@ schedule:
     start: 4pm
     end: 5pm
     summary: improvers short description
-    description: "imporvers long description"
+    description: improvers long description
   club:
     start: 9pm
     end: 12pm
