@@ -2,7 +2,10 @@
 <h1>test home page</h1>
 {{- range first 10 .Data.Pages }}
 <article>
-  <header><h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4></header>
+  <header>
+    <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+  </header>
+  {{ .Summary }}
 </article>
 {{- end }}
 {{ end }}
