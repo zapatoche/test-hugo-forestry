@@ -5,7 +5,10 @@
   <title>Salsa Caribe</title>
 </head>
 <body>
-<h1>Welcome to Salsa Caribe</h1>
+
+<header>
+  {{ with .Site.Title }}<h1>{{ . }}</h1>{{ end }}
+</header>
 
 {{ block "main" . }}
 {{ end }}
