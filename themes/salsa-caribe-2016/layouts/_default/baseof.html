@@ -12,7 +12,7 @@
     {{ $currentNode := . }}
     <ul>
       {{ range .Site.Menus.events }}
-      <li>
+      <li class="menu-item {{ if $currentNode.IsMenuCurrent "events" . }}menu-active{{ end }}">
         <a href="{{ .URL }}">{{ .Name }}</a>
       </li>
       {{ end }}
