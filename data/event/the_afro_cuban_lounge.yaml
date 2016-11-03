@@ -1,0 +1,8 @@
+name: The Afro Cuban Lounge
+"Short Description": "He is a **jolly good** fellow."
+classes:
+  beginners:
+    start: "14:00"
+    end: "15:00"
+    summary: "short description"
+    description: "long description"
