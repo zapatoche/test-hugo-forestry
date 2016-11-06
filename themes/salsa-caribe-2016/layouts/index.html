@@ -1,9 +1,10 @@
 {{ define "main" }}
 <h1>test home page</h1>
-{{- range first 10 .Data.Pages }}
+{{- range where  .Site.Pages "Section" "event" }}
 <article>
   <header>
     <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+    <p class="pill">{{ .Params.day }}</p>
   </header>
   {{ .Summary }}
 </article>
