@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Salsa Caribe</title>
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  <base href="{{ .Site.BaseURL  }}">
+  <link rel="canonical" href="{{ .Permalink  }}">
+
 </head>
 <body>
 
 <header>
-  {{ with .Site.Title }}<h1>{{ . }}</h1>{{ end }}
+  <a href="/">{{ with .Site.Title }}<h1>{{ . }}</h1>{{ end }}</a>
   <nav class="site-nav">
     {{ $currentNode := . }}
     <ul>
