@@ -1,0 +1,19 @@
+susan:
+  name: Susan Hacking
+  position:
+    - Dance teacher
+    - Promoter
+  contact:
+    email: susanchacking@aol.com
+    phone: 07956563841
+
+jim:
+  name: Jim Layne
+  position:
+    - Dance teacher
+    - Promoter
+    - Dj
+  contact:
+    email: jimdjdoc@aol.com
+    phone: 0707070707
+

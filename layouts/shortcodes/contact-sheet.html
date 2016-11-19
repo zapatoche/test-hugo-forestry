@@ -1,0 +1,9 @@
+<h1>Contact US</h1>
+{{ $yaml := .Site.Data.people.teachers }}
+
+{{ range $yaml }}
+<p>{{ .name }}</p>
+<p>{{ .contact.phone }}</p>
+<p>{{ .contact.email }}</p>
+{{ end }}
+<p>print something</p>
