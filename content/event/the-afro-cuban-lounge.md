@@ -1,7 +1,11 @@
 ---
 date: "2016-10-27T19:19:04+01:00"
 title: "the afro cuban lounge"
-menu: events
+
+menu:
+  - main
+  - events
+
 weight: 1
 day: Monday
 
