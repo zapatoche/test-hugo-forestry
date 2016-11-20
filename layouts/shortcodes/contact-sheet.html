@@ -1,9 +1,9 @@
 <h1>Contact US</h1>
 {{ $yaml := .Site.Data.people.teachers }}
 
-{{ range $yaml }}
-<p>{{ .name }}</p>
-<p>{{ .contact.phone }}</p>
-<p>{{ .contact.email }}</p>
+{{ range sort $yaml "desc" }}
+{{with .name}}<p><b>{{ . }}</b></p>{{end}}
+{{with .contact.phone}}<p><a href="tel:{{ . | replaceRE "^[0-9]" "0044" }}">{{ . }}</a></p>{{end}}
+{{with .contact.email}}<p>{{ . }}</p>{{end}}
 {{ end }}
 <p>print something</p>

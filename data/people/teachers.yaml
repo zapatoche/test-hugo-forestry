@@ -1,3 +1,8 @@
+company:
+  name: Salsa Caribe
+  contact:
+    email: info@salsacaribe.co.uk
+
 susan:
   name: Susan Hacking
   position:
@@ -5,15 +10,16 @@ susan:
     - Promoter
   contact:
     email: susanchacking@aol.com
-    phone: 07956563841
+    phone: "07956563841"
 
 jim:
   name: Jim Layne
+  nick_name: Dr JIm
   position:
     - Dance teacher
     - Promoter
     - Dj
   contact:
     email: jimdjdoc@aol.com
-    phone: 0707070707
+    phone: "0707070707"
 
