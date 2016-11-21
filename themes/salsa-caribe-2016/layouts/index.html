@@ -1,5 +1,4 @@
 {{ define "main" }}
-<h1>test home page</h1>
 {{- range where  .Site.Pages "Section" "event" }}
 <article>
   <header>
@@ -10,3 +9,7 @@
 </article>
 {{- end }}
 {{ end }}
+
+{{ define "footer" }}
+  <p>This is a custom footer</p>
+{{end}}
