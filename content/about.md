@@ -3,6 +3,8 @@ date: "2016-11-19T10:37:34-05:00"
 title: "about Salsa Caribe"
 menu: main
 
+slug: about
+
 weight: 4
 
 ---
@@ -33,4 +35,3 @@ We also organise and host Dance Cuba! - regular salsa holidays that have earned
 a reputation for being the best dance trips to Cuba available.
 
 
-{{< contact-sheet >}}

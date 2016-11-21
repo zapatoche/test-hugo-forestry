@@ -1,0 +1,15 @@
+{{ $pageData := replace .Page.Title " " "_" }}
+{{ $yaml := (index .Site.Data.event $pageData) }}
+{{ $schedule := $yaml.schedule }}
+<footer>
+  {{ with $schedule }}
+  {{ range $index, $schedule := $yaml.schedule }}
+  <dl>
+    <dt><b>{{ $index }}</b></dt>
+    <dd>{{ $schedule.summary }}</dd>
+    <dd>{{ $schedule.start }}-{{ $schedule.end }}</dd>
+  </dl>
+  {{ end }}
+  {{ end }}
+</footer>
+
