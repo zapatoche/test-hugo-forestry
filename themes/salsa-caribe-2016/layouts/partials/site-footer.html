@@ -1,10 +1,17 @@
-<h1 id="contact">This is the site footer</h1>
+<h1 id="contact">Contact us</h1>
+
 {{ $yaml := (index .Site.Data.contact) }}
+{{ $org := $yaml.org }}
 {{ $people := $yaml.people }}
 
-
+<dl class="vcard">
+  {{ with $org }}
+  <dt class="org"><b>{{ $org.name }}</b></dt>
+  <dd><a href="mailto://{{ $org.contact.email }}">{{ $yaml.org.contact.email }}</a></dd>
+  {{ end  }}
 {{ range $index, $people := $yaml.people }}
-{{with .name}}<p><a href="/about/{{$index}}"><b>{{ $index }}</b></a></p>{{end}}
-{{with .contact.phone}}<p><a href="tel:{{ . | replaceRE "^[0-9]" "0044" }}">{{ . }}</a></p>{{end}}
-{{with .contact.email}}<p><a href="mailto://{{ . }}">{{ . }}</a></p>{{end}}
+  {{ with . }}<dt><a href="/about/{{ $index }}"><b>{{ humanize $index }}</b></a></dt>{{ end }}
+  {{ with .contact.phone }}<dd><a href="tel:{{ . | replaceRE "^[0-9]" "0044" }}">{{ . }}</a></dd>{{ end }}
+  {{ with .contact.email }}<dd><a href="mailto://{{ . }}">{{ . }}</a></dd>{{ end }}
 {{ end }}
+</dl>
