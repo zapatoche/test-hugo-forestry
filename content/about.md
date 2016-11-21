@@ -1,6 +1,6 @@
 ---
 date: "2016-11-19T10:37:34-05:00"
-title: "about Salsa Caribe"
+title: about us
 menu: main
 
 slug: about
