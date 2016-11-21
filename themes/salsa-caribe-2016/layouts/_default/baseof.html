@@ -9,23 +9,15 @@
 </head>
 <body>
 
-<header>
-  <a href="/">{{ with .Site.Title }}<h1>{{ . }}</h1>{{ end }}</a>
-  <nav class="site-nav">
-    {{ $currentNode := . }}
-    <ul>
-      {{ range .Site.Menus.main }}
-      <li class="menu-item {{ if $currentNode.IsMenuCurrent "main" . }}menu-active{{ end }}">
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      </li>
-      {{ end }}
-      <li>contact us</li>
-    </ul>
-  </nav>
-</header>
+{{ partial "site-header" . }}
 
 {{ block "main" . }}
 {{ end }}
+
+{{ block "footer" . }}
+{{ end }}
+
+{{ partial "site-footer.html" . }}
 
 </body>
 </html>
