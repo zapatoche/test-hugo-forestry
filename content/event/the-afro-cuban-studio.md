@@ -17,7 +17,6 @@ tags:
 
 # This is the Afro Cuban Studio page and it's awesome {#afro-studio}
 
-{{< relref "/event/the-afro-cuban-lounge.md" >}}
 
 {{< schedule >}}
 
