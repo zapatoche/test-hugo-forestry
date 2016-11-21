@@ -4,7 +4,7 @@ title: "Susan Hacking"
 
 ---
 
-# Tjis is Susan bio page
+# This is Susan bio page
 
 Trained in a wide variety of dance disciplines, Susan has been teaching salsa
 for ten years and has studied Cuban popular and folkloric dance forms, both in
