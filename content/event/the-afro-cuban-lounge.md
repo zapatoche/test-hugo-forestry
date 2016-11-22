@@ -1,6 +1,7 @@
 ---
-date: "2016-10-27T19:19:04+01:00"
-title: "the afro cuban lounge"
+date: 2016-10-27T19:19:04+01:00
+title: &title the afro cuban lounge
+page_title: *title
 
 menu:
   - main

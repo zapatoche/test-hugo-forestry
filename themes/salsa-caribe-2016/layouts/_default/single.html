@@ -1,7 +1,13 @@
 {{ define "main" }}
 
-<h1>{{ .Title }}</h1>
+<article>
+  <header class="article-header">
+    <h1>{{  .Params.page_title }}</h1>
+  </header>
 
-{{ .Content }}
+  {{ .Content }}
+
+</article>
 
 {{ end }}
+

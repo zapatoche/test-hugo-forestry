@@ -1,6 +1,7 @@
 ---
 date: "2016-11-19T10:37:34-05:00"
-title: about us
+title: About us
+page_title: All you ever wanted to know about us
 menu: main
 
 slug: about
@@ -10,7 +11,6 @@ weight: 4
 ---
 
 
-# this is the about page
 
 Salsa caribe productions are London's leading promoters of authentic Cuban salsa,
 presenting dance classes, workshops, club nights and performances, both in the

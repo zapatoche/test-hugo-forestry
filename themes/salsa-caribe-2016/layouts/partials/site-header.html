@@ -1,20 +1,16 @@
-<header class="header site-header" role="banner">
-  <a href="/">{{ with .Site.Title }}<h1>{{ . }}</h1>{{ end }}</a>
-  {{ if isset .Params "title" }}
-has page title
-  {{ else }}
-    has no title
-  {{ end }}
-  <nav class="site-nav">
-    {{ $currentNode := . }}
-    <ul>
-      {{ range .Site.Menus.main }}
-      <li class="menu-item {{ if $currentNode.IsMenuCurrent "main" . }}menu-active{{ end }}">
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      </li>
-      {{ end }}
-      <li><a href="#contact">contact us</a></li>
+<a href="/">{{ with .Site.Title }}<h1>{{ . }}</h1>{{ end }}</a>
+<nav class="site-nav">
+  {{ $currentNode := . }}
+  <ul>
+    {{ range .Site.Menus.main }}
+    <li class="menu-item {{ if $currentNode.IsMenuCurrent "main" . }}menu-active{{ end }}">
+      <a href="{{ .URL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+    <li><a href="#contact">contact us</a></li>
 
-    </ul>
-  </nav>
-</header>
+  </ul>
+</nav>
+
+
+

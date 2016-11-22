@@ -5,20 +5,26 @@
   <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
   <base href="{{ .Site.BaseURL  }}">
   <link rel="canonical" href="{{ .Permalink  }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </head>
 <body>
 
-{{ partial "site-header" . }}
+<header class="site-header" role="banner">
+  {{ partial "site-header" . }}
+</header>
 
-{{ block "main" . }}
-{{ end }}
+<main>
+  {{ block "main" . }}
+  {{ end }}
+  {{ block "footer" . }}
+  {{ end }}
+</main>
 
-<!-- this is a custom block test -->
-{{ block "footer" . }}
-{{ end }}
 
-{{ partial "site-footer.html" . }}
+<footer role="contentinfo">
+  {{ partial "site-footer.html" . }}
+</footer>
 
 </body>
 </html>

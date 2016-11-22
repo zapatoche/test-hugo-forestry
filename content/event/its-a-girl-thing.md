@@ -1,6 +1,7 @@
 ---
 date: "2016-11-06T11:19:31-05:00"
-title: It's a girl thing
+title: &title "It's a girl thing"
+page_title: *title
 
 menu:
   - main
@@ -18,7 +19,6 @@ categories:
 
 # it's a girl thing page {#girl-thing}
 
-{{< page-title >}}
 
- {{< categories-list >}}
+{{< categories-list >}}
 
