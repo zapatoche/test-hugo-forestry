@@ -3,13 +3,13 @@
 {{ $schedule := $yaml.schedule }}
 <footer>
   {{ with $schedule }}
-  {{ range $index, $schedule := $yaml.schedule }}
   <dl>
+  {{ range $index, $schedule := $yaml.schedule }}
     <dt><b>{{ $index }}</b></dt>
     <dd>{{ $schedule.summary }}</dd>
     <dd>{{ $schedule.start }}-{{ $schedule.end }}</dd>
-  </dl>
   {{ end }}
+  </dl>
   {{ end }}
 </footer>
 
