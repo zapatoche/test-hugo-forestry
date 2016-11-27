@@ -23,8 +23,5 @@ tags:
 
 <!--more-->
 
-**Magic**
-: definition lists
-: just work
 
 
