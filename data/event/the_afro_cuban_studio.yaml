@@ -11,10 +11,14 @@ schedule:
       **Level 3–5** short description
     description: |
       intermediate and advanced long description
-    level:
-      - 3
-      - 4
-      - 5
+    level: |
+      Levels 3, 4 and 5
+    levels:
+      level:
+        - 3
+        - 4
+        - 5
+
 
   "Beginners & Improvers":
     start: 4pm
@@ -23,9 +27,13 @@ schedule:
       **beginners** short description
     description: |
       beginners long description
-    level:
-      - 1
-      - 2
+    level: |
+      Levels 1 and 2
+    levels:
+      level:
+        - 3
+        - 4
+        - 5
 
   "Cuban Styling":
     start: 4pm
@@ -34,12 +42,12 @@ schedule:
       **Cuban Styling** short description
     description: |
       Cuban Styling long description
-    level:
-      - 3
-      - 4
-      - 5
+    level: |
+      Levels 3, 4 and 5
 
 # Classes and club pricing
 price:
   classes: |
     **£8** for one, **£11** for two
+
+

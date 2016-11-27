@@ -6,15 +6,17 @@
   {{ $schedule := $yaml.schedule }}
   {{ with $schedule }}
     {{ range $index, $schedule := $yaml.schedule }}
-      <dt><b>{{ $index | replaceRE "^[0-9] " "" }}</b></dt>
-      <dd>{{ markdownify $schedule.summary }}</dd>
-      <dd>{{ $schedule.start }}-{{ $schedule.end }}</dd>
+      <dt class="name"><b>{{ $index | replaceRE "^[0-9] " "" }}</b></dt>
+      <dd class="summary">{{ markdownify .summary }}</dd>
+      <dd class="time">{{ .start }}-{{ .end }}</dd>
+      {{ with .level }}<dd>{{ markdownify . }}</dd>{{ end }}
+      {{ with .levels }}<dd> Levels {{ delimit .level ", " " and "}}</dd>{{ end }}
     {{ end }}
   {{ end }}
 
   {{ $price := $yaml.price }}
   {{ with $price }}
-  <dt><b>Prices:</b></dt>
+  <dt class="price"><b>Prices:</b></dt>
     {{ range  $index, $price := $yaml.price }}
     <dd><b>{{ $index }}:</b> {{ markdownify . }}</dd>
     {{ end }}
