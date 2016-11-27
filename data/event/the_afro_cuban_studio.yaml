@@ -2,18 +2,44 @@ name: The Afro Cuban Studio
 
 "Short Description": "He is a **jolly good** fellow."
 
+# Classes and club listing and details
 schedule:
-  beginners:
-    start: 3pm
+  "Intermediate & Advanced":
+    start: 2:30pm
     end: 4pm
-    summary: beginners short description nandos
-    description: beginners long description
-  improvers:
+    summary: |
+      **Level 3–5** short description
+    description: |
+      intermediate and advanced long description
+    level:
+      - 3
+      - 4
+      - 5
+
+  "Beginners & Improvers":
     start: 4pm
-    end: 5pm
-    summary: improvers short description
-    description: improvers long description
-  club:
-    start: 9pm
-    end: 12pm
-    price: £4
+    end: 5:30pm
+    summary: |
+      **beginners** short description
+    description: |
+      beginners long description
+    level:
+      - 1
+      - 2
+
+  "Cuban Styling":
+    start: 4pm
+    end: 5:30pm
+    summary: |
+      **Cuban Styling** short description
+    description: |
+      Cuban Styling long description
+    level:
+      - 3
+      - 4
+      - 5
+
+# Classes and club pricing
+price:
+  classes: |
+    **£8** for one, **£11** for two

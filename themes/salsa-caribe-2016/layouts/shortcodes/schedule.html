@@ -1,16 +1,25 @@
 {{ $pageData := replace .Page.Title " " "_" }}
 {{ $yaml := (index .Site.Data.event $pageData) }}
-{{ $schedule := $yaml.schedule }}
+{{ with $yaml }}
 <footer>
-  {{ with $schedule }}
   <dl>
-  {{ range $index, $schedule := $yaml.schedule }}
-    <dt><b>{{ $index }}</b></dt>
-    <dd>{{ $schedule.summary }}</dd>
-    <dd>{{ $schedule.start }}-{{ $schedule.end }}</dd>
+  {{ $schedule := $yaml.schedule }}
+  {{ with $schedule }}
+    {{ range $index, $schedule := $yaml.schedule }}
+      <dt><b>{{ $index | replaceRE "^[0-9] " "" }}</b></dt>
+      <dd>{{ markdownify $schedule.summary }}</dd>
+      <dd>{{ $schedule.start }}-{{ $schedule.end }}</dd>
+    {{ end }}
   {{ end }}
+
+  {{ $price := $yaml.price }}
+  {{ with $price }}
+  <dt><b>Prices:</b></dt>
+    {{ range  $index, $price := $yaml.price }}
+    <dd><b>{{ $index }}:</b> {{ markdownify . }}</dd>
+    {{ end }}
+  {{ end }}
+
   </dl>
-  {{ end }}
 </footer>
-
-
+{{ end }}

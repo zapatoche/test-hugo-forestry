@@ -1,8 +1,41 @@
 name: The Afro Cuban Lounge
 
+"Short Description": "He is a **jolly good** fellow."
+
+# Classes and club listing and details
 schedule:
-  beginners:
-    start: "14:00"
-    end: "15:00"
-    summary: "short description"
-    description: "long description"
+  "1 Beginners & Imporvers":
+    start: 7:15pm
+    end: 8:15pm
+    summary: |
+      **beginners** short description
+    description: |
+      beginners long description
+    level:
+      - 1
+      - 3
+
+  "2 Intermediates & Advanced":
+    start: 8:30pm
+    end: 9:30pm
+    summary: |
+      **improvers** short description
+    description: |
+      improvers long description
+    level:
+      - 2
+      - 4
+
+  "3 Club":
+    start: 9:30pm
+    end: 12pm
+    price: £4
+    summary: |
+      **The Afro Cuban lounge** short description
+
+# Classes and club pricing
+price:
+  classes: |
+    **£8** for one, **£11** for two
+  club: |
+    only **£4**
