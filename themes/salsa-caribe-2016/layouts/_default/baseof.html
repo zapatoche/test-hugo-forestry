@@ -6,11 +6,12 @@
   <base href="{{ .Site.BaseURL  }}">
   <link rel="canonical" href="{{ .Permalink  }}">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 
 </head>
-<body>
+<body class="bg-washed-yellow near-black">
 
-<header class="site-header" role="banner">
+<header class="site-header pa2 ba mw9 center" role="banner">
   {{ partial "site-header" . }}
 </header>
 
@@ -22,7 +23,7 @@
 </main>
 
 
-<footer role="contentinfo">
+<footer role="contentinfo" class="mw9 center">
   {{ partial "site-footer.html" . }}
 </footer>
 

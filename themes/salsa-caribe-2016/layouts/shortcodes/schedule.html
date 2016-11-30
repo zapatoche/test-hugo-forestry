@@ -1,7 +1,7 @@
 {{ $pageData := replace .Page.Title " " "_" }}
 {{ $yaml := (index .Site.Data.event $pageData) }}
 {{ with $yaml }}
-<footer>
+<footer class="fl w-100">
   <dl>
   {{ $schedule := $yaml.schedule }}
   {{ with $schedule }}

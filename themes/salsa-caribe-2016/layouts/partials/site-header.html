@@ -1,13 +1,13 @@
 <a href="/">{{ with .Site.Title }}<h1>{{ . }}</h1>{{ end }}</a>
-<nav class="site-nav">
+<nav class="site-nav dark-bg">
   {{ $currentNode := . }}
-  <ul class="nav-list">
+  <ul class="nav-list list bt bb tc center p0">
     {{ range .Site.Menus.main }}
-    <li class="nav-item {{ if $currentNode.IsMenuCurrent "main" . }}is-active{{ end }}">
+    <li class="nav-item f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa1 ph4-l {{ if $currentNode.IsMenuCurrent "main" . }}is-active{{ end }}">
       <a href="{{ .URL }}">{{ .Name }}</a>
     </li>
     {{ end }}
-    <li><a href="#contact">contact us</a></li>
+    <li class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa1 ph4-l"><a href="#contact">contact us</a></li>
 
   </ul>
 </nav>
