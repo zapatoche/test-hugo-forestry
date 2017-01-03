@@ -5,4 +5,19 @@ title: Learn to dance with the cuban salsa specialists
 languageCode: en
 buildDraft: true
 watch: true
-metaDataFormat: yaml
+
+# Dynamic menus
+menu:
+  main:
+    - Name: Home
+      Weight: -120
+      Identifier: home
+      URL: /
+    - Name: "About Us"
+      Weight: -110
+      Identifier: "about us"
+      URL: "/about/"
+    - Name: "Contact us"
+      Weight: -100
+      indentifier: contact
+      URL: "#contact"

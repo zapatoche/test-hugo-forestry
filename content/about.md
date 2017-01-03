@@ -2,11 +2,6 @@
 date: "2016-11-19T10:37:34-05:00"
 title: About us
 page_title: All you ever wanted to know about us
-menu: main
-
-slug: about
-
-weight: 4
 
 ---
 
