@@ -4,7 +4,7 @@
 {{ $org := $yaml.org }}
 {{ $people := $yaml.people }}
 
-<dl class="vcard ba fl w-100 pa2">
+<dl class="vcard ba fl w-100 pa2 mb0">
   {{ with $org }}
   <dt class="org"><b>{{ $org.name }}</b></dt>
   <dd><a href="mailto://{{ $org.contact.email }}">{{ $yaml.org.contact.email }}</a></dd>

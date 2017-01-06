@@ -2,7 +2,7 @@
 {{ $yaml := (index .Site.Data.event $pageData) }}
 {{ with $yaml }}
 <footer class="fl w-100">
-  <dl>
+  <dl class="fl w-100">
   {{ $schedule := $yaml.schedule }}
   {{ with $schedule }}
     {{ range $index, $schedule := $yaml.schedule }}
