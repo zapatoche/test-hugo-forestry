@@ -4,7 +4,6 @@ title: &title "It's a girl thing"
 page_title: *title
 
 menu:
-  - main
   - events
 
 weight: 2

@@ -4,8 +4,10 @@ title: &title the afro cuban lounge
 page_title: *title
 
 menu:
-  - main
-  - events
+  events:
+    parent: monday
+    Pre: test
+
 
 weight: 1
 day: Monday

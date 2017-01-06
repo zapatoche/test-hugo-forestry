@@ -4,7 +4,6 @@ title: &title "the afro cuban studio"
 page_title: *title
 
 menu:
-  - main
   - events
 
 weight: 3
