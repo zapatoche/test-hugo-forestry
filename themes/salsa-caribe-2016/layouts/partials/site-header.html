@@ -1,4 +1,6 @@
-<a class="tc" href="/">{{ with .Site.Title }}<h1>{{ . }}</h1>{{ end }}</a>
+<div class="tc">
+  {{ with .Title }}<h1 class="page-title">{{ . }}</h1>{{ end }}
+</div>
 
 <nav class="site-nav dark-bg">
   {{ $currentNode := . }}
