@@ -1,17 +1,32 @@
-<h1 id="contact">Contact us</h1>
+<h2 id="contact">Contact us</h2>
 
 {{ $yaml := (index .Site.Data.contact) }}
 {{ $org := $yaml.org }}
 {{ $people := $yaml.people }}
 
-<dl class="vcard ba fl w-100 pa2 mb0">
-  {{ with $org }}
-  <dt class="org"><b>{{ $org.name }}</b></dt>
-  <dd><a href="mailto://{{ $org.contact.email }}">{{ $yaml.org.contact.email }}</a></dd>
-  {{ end  }}
-{{ range $index, $people := $yaml.people }}
-  {{ with . }}<dt><a href="/about/{{ $index }}"><b>{{ humanize $index }}</b></a></dt>{{ end }}
-  {{ with .contact.phone }}<dd><a href="tel:{{ . | replaceRE "^[0-9]" "0044" }}">{{ . }}</a></dd>{{ end }}
-  {{ with .contact.email }}<dd><a href="mailto://{{ . }}">{{ . }}</a></dd>{{ end }}
-{{ end }}
+<div class="cf ba">
+  <div class="vcard fl w-100 w-third-ns pa3">
+    <dl class="">
+      {{ with $org }}
+      <dt class="org"><b>{{ $org.name }}</b></dt>
+      <dd>Email: <a href="mailto://{{ $org.contact.email }}">{{ $yaml.org.contact.email }}</a></dd>
+      {{ end  }}
+    </dl>
+  </div>
+  {{ range $index, $people := $yaml.people }}
+  <div class="vcard fl  w-100 w-third-ns pa3">
+    {{ with . }}<h3><a href="/about/{{ $index }}"><b>{{ humanize $index }}</b></a></h3>{{ end }}
+    <dl>
+      {{ with .contact.phone }}
+      <dt><abbr title="telephone">Tel</abbr>:</dt>
+      <dd><a href="tel:{{ . | replaceRE "^[0-9]" "0044" }}">{{ . }}</a></dd>
+      {{ end }}
+      {{ with .contact.email }}
+      <dt>Email:</dt>
+      <dd><a href="mailto://{{ . }}">{{ . }}</a></dd>
+      {{ end }}
+    </dl>
+  </div>
+  {{ end }}
+</div>
 </dl>
