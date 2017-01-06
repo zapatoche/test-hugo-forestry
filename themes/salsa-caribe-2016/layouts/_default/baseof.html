@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-  <link rel="canonical" href="{{ .Permalink  }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+    <link rel="canonical" href="{{ .Permalink  }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
 
-</head>
-<body class="bg-washed-yellow near-black">
+  </head>
+  <body class="bg-washed-yellow near-black">
 
-<header class="site-header pa2 ba mw9 center" role="banner">
-  {{ partial "site-header" . }}
-</header>
+    <header class="site-header cf pa2 ba mw8" role="banner">
+      {{ partial "site-header" . }}
+    </header>
 
-<main>
-  {{ block "main" . }}
-  {{ end }}
-  {{ block "footer" . }}
-  {{ end }}
-</main>
+    <main class="cf mw8 ba pa2">
+      {{ block "main" . }}
+      {{ end }}
+      {{ block "footer" . }}
+      {{ end }}
+    </main>
 
 
-<footer role="contentinfo" class="mw9 center">
-  {{ partial "site-footer.html" . }}
-</footer>
+    <footer role="contentinfo" class="cf mw8 ba">
+      {{ partial "site-footer.html" . }}
+    </footer>
 
-</body>
+  </body>
 </html>
 
