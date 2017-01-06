@@ -11,11 +11,18 @@
   </ul>
 
 
-  <h2 class="p2 tc">our events</h2>
-  <ul class="nav-list list bt bb tc center p0">
+  {{ with .Site.Title }}<h2 class="p2 tc bb pa2">{{ . }}</h2>{{ end }}
+  <ul class="nav-list list bb center p0 tc m0">
     {{ range .Site.Menus.events }}
-    <li class="nav-item f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa1 ph4-l {{ if $currentNode.IsMenuCurrent "main" . }}is-active{{ end }}">
-      <a href="{{ .URL }}">{{ .Name }}</a>
+    <li class="dib pa1">
+      {{ .Name }}
+      <ul class="list  bt center p0">
+      {{ range .Children }}
+        <li class="nav-item link bg-animate black-80 hover-bg-lightest-blue dib pa1  {{ if $currentNode.IsMenuCurrent "events" . }}is-active{{ end }}">
+          <a href="{{ .URL }}">{{ .Name }}</a>
+        </li>
+      {{ end }}
+      </ul>
     </li>
     {{ end }}
   </ul>

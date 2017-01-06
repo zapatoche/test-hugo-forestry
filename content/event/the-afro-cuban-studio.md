@@ -3,11 +3,12 @@ date: "2016-10-27T19:20:21+01:00"
 title: &title "the afro cuban studio"
 page_title: *title
 
-menu:
-  - events
+day: &parent Sunday
 
-weight: 3
-day: Sunday
+menu:
+  events:
+    parent: *parent
+
 tags:
   - classes
   - weekly
