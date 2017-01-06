@@ -15,14 +15,18 @@
   <ul class="nav-list list bb center p0 tc m0">
     {{ range .Site.Menus.events }}
     <li class="dib pa1">
-      {{ .Name }}
+      {{ if .HasChildren }}
+      <b class="pill">{{ .Name }}</b>
       <ul class="list  bt center p0">
-      {{ range .Children }}
+        {{ range .Children }}
         <li class="nav-item link bg-animate black-80 hover-bg-lightest-blue dib pa1  {{ if $currentNode.IsMenuCurrent "events" . }}is-active{{ end }}">
           <a href="{{ .URL }}">{{ .Name }}</a>
         </li>
-      {{ end }}
+        {{ end }}
       </ul>
+      {{ else }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      {{ end }}
     </li>
     {{ end }}
   </ul>
