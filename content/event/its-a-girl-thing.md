@@ -19,6 +19,8 @@ categories:
 ---
 
 # it's a girl thing page {#girl-thing}
+
+{{< schedule >}}
 <!--more-->
 
 
