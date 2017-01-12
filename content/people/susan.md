@@ -2,6 +2,8 @@
 date: "2016-11-19T10:47:42-05:00"
 title: "Susan Hacking"
 
+url: /about/susan/
+
 ---
 
 # This is Susan bio page

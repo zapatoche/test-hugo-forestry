@@ -2,6 +2,8 @@
 date: "2016-11-19T10:47:35-05:00"
 title: "Jim Layne"
 
+url: /about/jim/
+
 ---
 
 
