@@ -11,13 +11,10 @@ menu:
   main:
     - Name: Home
       Weight: -120
-      Identifier: home
-      URL: /
-    - Name: "About us"
+      URL: '/'
+    - Name: 'About us'
       Weight: -110
-      Identifier: "about us"
-      URL: /about
+      URL: '/about/'
     - Name: "Contact us"
       Weight: -100
-      indentifier: contact
-      URL: #contact
+      URL: '#contact'
