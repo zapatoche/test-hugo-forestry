@@ -1,10 +1,9 @@
 ---
 date: "2016-11-19T10:37:34-05:00"
-title: About us
-page_title: All you ever wanted to know about us
+title: Salsa Caribe production
+tagline: All you ever wanted to know about Salsa Caribe
 
 ---
-
 
 
 Salsa caribe productions are London's leading promoters of authentic Cuban salsa,

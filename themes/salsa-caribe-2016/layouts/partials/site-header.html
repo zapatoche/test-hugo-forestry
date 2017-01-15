@@ -1,19 +1,24 @@
 <div class="tc">
-  {{ with .Title }}<h1 class="page-title">{{ . }}</h1>{{ end }}
+  <h1 class="p2 tc pa2">
+      {{ .Title }}
+  </h1>
+  <h2 class="p2 tc pa2">
+    {{ if .IsHome }}{{ .Site.Params.tagline }}{{ else }}{{ .Params.tagline }}{{ end }}
+  </h2>
 </div>
 
 <nav class="site-nav dark-bg">
   {{ $currentNode := . }}
+
   <ul class="nav-list list bt bb tc center p0">
     {{ range .Site.Menus.main }}
     <li class="nav-item f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa1 ph4-l {{ if $currentNode.IsMenuCurrent "main" . }}is-active{{ end }}">
-      <a href="{{ .URL }}">{{ .Name }}</a>
+
+      <a href="{{ .URL }}">{{ with .Pre }}<span class="logo">{{ . }} : </span>{{ end }}{{ .Name }}</a>
     </li>
     {{ end }}
   </ul>
 
-
-  {{ with .Site.Title }}<h2 class="p2 tc bb pa2">{{ . }}</h2>{{ end }}
   <ul class="nav-list list bb center p0 tc m0">
     {{ range .Site.Menus.events }}
     <li class="dib pa1">
@@ -32,6 +37,7 @@
     </li>
     {{ end }}
   </ul>
+
 </nav>
 
 

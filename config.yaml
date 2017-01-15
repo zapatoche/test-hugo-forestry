@@ -1,10 +1,14 @@
 themeDir: themes
 theme: salsa-caribe-2016
 baseurl: http://www.salsacaribe.co.uk
-title: Learn to dance with the cuban salsa specialists
+title: Salsa Caribe
 languageCode: en
 buildDraft: true
 watch: true
+
+params:
+  logo: Salsa Caribe
+  tagline: Learn to dance with the cuban salsa specialists
 
 # Dynamic menus
 menu:
@@ -12,6 +16,7 @@ menu:
     - Name: Home
       Weight: -120
       URL: '/'
+      Pre: 'salsa caribe'
     - Name: 'About us'
       Weight: -110
       URL: '/about/'

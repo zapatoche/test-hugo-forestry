@@ -1,7 +1,7 @@
 ---
 date: "2016-10-27T19:20:21+01:00"
-title: &title "the afro cuban studio"
-page_title: *title
+title: The Afro Cuban Studio
+tagline: Casino Salsa and the roots of Cuban salsa
 
 day: &parent Sunday
 
@@ -17,6 +17,8 @@ tags:
 ---
 
 # This is the Afro Cuban Studio page and it's awesome {#afro-studio}
+
+here is a bit more info
 
 
 {{< schedule >}}
