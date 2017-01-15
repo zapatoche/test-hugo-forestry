@@ -1,5 +1,5 @@
 {{ $pageData := replace .Page.Title " " "_" }}
-{{ $yaml := (index .Site.Data.event $pageData) }}
+{{ $yaml := (index .Site.Data.event ( lower $pageData )) }}
 {{ with $yaml }}
 <footer class="fl w-100">
   <dl class="fl w-100">
