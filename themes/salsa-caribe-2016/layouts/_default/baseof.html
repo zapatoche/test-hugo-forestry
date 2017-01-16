@@ -6,15 +6,17 @@
     <link rel="canonical" href="{{ .Permalink  }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+    <link rel="stylesheet" href="{{ .Site.BaseURL }}css/app.css">
 
   </head>
   <body class="bg-washed-yellow near-black">
 
     <header class="site-header cf pa2 ba mw8" role="banner">
       {{ partial "site-header" . }}
+      {{ partial "site-navigation" . }}
     </header>
 
-    <main class="cf mw8 ba pa2">
+    <main class="cf mw8 ba pa2" id="main">
       {{ block "main" . }}
       {{ end }}
       {{ block "footer" . }}

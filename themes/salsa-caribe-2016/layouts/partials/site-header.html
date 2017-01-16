@@ -1,44 +1,13 @@
-<div class="tc">
-  <h1 class="p2 tc pa2">
-      {{ .Title }}
-  </h1>
-  <h2 class="p2 tc pa2">
-    {{ if .IsHome }}{{ .Site.Params.tagline }}{{ else }}{{ .Params.tagline }}{{ end }}
-  </h2>
-</div>
+<h1 class="p2 f2 tc pa2">
+  {{ .Title }}
+</h1>
+{{ with .Params.tagline }}
+<p class="p2 f3 tc pa2">
+  <span class="visually-hidden" hidden>Subtitle</span> {{ . }}
+</p>
+{{ end }}
 
-<nav class="site-nav dark-bg">
-  {{ $currentNode := . }}
-
-  <ul class="nav-list list bt bb tc center p0">
-    {{ range .Site.Menus.main }}
-    <li class="nav-item f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa1 ph4-l {{ if $currentNode.IsMenuCurrent "main" . }}is-active{{ end }}">
-
-      <a href="{{ .URL }}">{{ with .Pre }}<span class="logo">{{ . }} : </span>{{ end }}{{ .Name }}</a>
-    </li>
-    {{ end }}
-  </ul>
-
-  <ul class="nav-list list bb center p0 tc m0">
-    {{ range .Site.Menus.events }}
-    <li class="dib pa1">
-      {{ if .HasChildren }}
-      <b class="pill">{{ .Name }}</b>
-      <ul class="list  bt center p0">
-        {{ range .Children }}
-        <li class="nav-item link bg-animate black-80 hover-bg-lightest-blue dib pa1  {{ if $currentNode.IsMenuCurrent "events" . }}is-active{{ end }}">
-          <a href="{{ .URL }}">{{ .Name }}</a>
-        </li>
-        {{ end }}
-      </ul>
-      {{ else }}
-        <a href="{{ .URL }}">{{ .Name }}</a>
-      {{ end }}
-    </li>
-    {{ end }}
-  </ul>
-
-</nav>
+<a href="#main">skip to content</a>
 
 
 
