@@ -1,4 +1,11 @@
 {{ define "main" }}
+
+{{ with .Content }}
+<div class="intro">
+  {{ . }}
+</div>
+{{ end }}
+
 {{- range where  .Site.Pages "Section" "event" }}
 <article>
   <header>
