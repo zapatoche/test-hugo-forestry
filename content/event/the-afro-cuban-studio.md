@@ -16,7 +16,7 @@ tags:
 
 ---
 
-# This is the Afro Cuban Studio page and it's awesome {#afro-studio}
+## This is the Afro Cuban Studio page and it's awesome {#afro-studio}
 
 here is a bit more info
 
