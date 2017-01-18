@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="{{ .Site.BaseURL }}css/app.css">
 
   </head>
-  <body class="bg-washed-yellow near-black">
+  <body class="bg-washed-yellow near-black ph2 ph4-l mw8">
 
-    <header class="site-header cf pa2 ba mw8" role="banner">
+    <header class="site-header cf" role="banner">
       {{ partial "site-header" . }}
       {{ partial "site-navigation" . }}
     </header>
 
-    <main class="cf mw8 ba pa2" id="main">
+    <main class="" id="main">
       {{ block "main" . }}
       {{ end }}
       {{ block "footer" . }}
@@ -24,7 +24,7 @@
     </main>
 
 
-    <footer role="contentinfo" class="cf mw8 ba">
+    <footer role="contentinfo" class="cf">
       {{ partial "site-footer.html" . }}
     </footer>
 

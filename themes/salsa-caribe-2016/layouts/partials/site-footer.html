@@ -4,8 +4,8 @@
 {{ $org := $yaml.org }}
 {{ $people := $yaml.people }}
 
-<div class="cf ba">
-  <div class="vcard fl w-100 w-third-ns pa3">
+<div class="cf">
+  <div class="vcard">
     <dl class="">
       {{ with $org }}
       <dt class="org"><b>{{ $org.name }}</b></dt>
@@ -14,7 +14,7 @@
     </dl>
   </div>
   {{ range $index, $people := $yaml.people }}
-  <div class="vcard fl  w-100 w-third-ns pa3">
+  <div class="vcard">
     {{ with . }}<h3><a href="/about/{{ $index }}"><b>{{ humanize $index }}</b></a></h3>{{ end }}
     <dl>
       {{ with .contact.phone }}
