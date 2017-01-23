@@ -1,0 +1,20 @@
+{{ $currentNode := . }}
+<ul class="nav-list list bb center pl0 tc-m">
+  {{ range .Site.Menus.events }}
+  <li class="dib pa1 pl0">
+    {{ if .HasChildren }}
+    <b class="pill">{{ .Name }}</b>
+    <ul class="list  bt center pv1 pl0">
+      {{ range .Children }}
+      <li class="nav-item link bg-animate black-80 hover-bg-lightest-blue dib pa1  pl0 {{ if $currentNode.IsMenuCurrent "events" . }}is-active{{ end }}">
+        <a href="{{ .URL }}">{{ .Name }}</a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ else }}
+    <a href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+  </li>
+  {{ end }}
+</ul>
+

@@ -1,0 +1,10 @@
+{{ $currentNode := . }}
+<ul class="nav-list list pl0 tc-m center">
+  {{ range .Site.Menus.main }}
+  <li class="nav-item f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib {{ if $currentNode.IsMenuCurrent "main" . }}is-active{{ end }}">
+
+    <a href="{{ .URL }}">{{ with .Pre }}<span class="logo">{{ . }} : </span>{{ end }}{{ .Name }}</a>
+  </li>
+  {{ end }}
+</ul>
+

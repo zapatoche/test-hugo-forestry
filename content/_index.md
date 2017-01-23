@@ -6,6 +6,8 @@ url: "index.html"
 
 ---
 
+## Learn to dance with the Cuban salsa specialists
+
 **Salsa caribe productions** are London's leading promoters of authentic Cuban salsa,
 presenting dance classes, workshops, club nights and performances, both in the
 UK and in Cuba. Our dance teachers, performers and DJ are amongst the most

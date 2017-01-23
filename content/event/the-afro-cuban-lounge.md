@@ -14,7 +14,8 @@ weight: 1
 
 ---
 
-## this the Afro Cuban lounge page and it's well good {#afro-lounge}
+## A night of super cool Timba and old school Cuban salsa
+
 
 {{< schedule >}}
 

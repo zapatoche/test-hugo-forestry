@@ -13,10 +13,9 @@ params:
 # Dynamic menus
 menu:
   main:
-    - Name: Home
+    - Name: Classes & events
       Weight: -120
       URL: '/'
-      Pre: 'salsa caribe'
     - Name: 'About us'
       Weight: -110
       URL: '/about/'
