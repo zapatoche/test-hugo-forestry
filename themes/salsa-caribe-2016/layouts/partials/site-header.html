@@ -1,7 +1,13 @@
-<h1 class="p2 f2 tc pa2">
-  {{ .Title }}
-</h1>
+<nav class="site-nav" aria-label="site">
+<div class="brand tc">
+  <a href="/" class="fn dib">
+    <span class="fn logo">{{ markdownify .Site.Params.logo }}</span>
+  </a>
+</div>
 <a href="#main">skip to content</a>
+  {{ partial "main-menu" . }}
+  {{ partial "event-menu" . }}
+</nav>
 
 
 
