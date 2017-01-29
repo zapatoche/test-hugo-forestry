@@ -3,6 +3,7 @@ theme: salsa-caribe-2016
 baseurl: http://www.salsacaribe.co.uk
 title: Salsa Caribe
 languageCode: en
+metaDataFormat: yaml
 buildDraft: true
 watch: true
 
