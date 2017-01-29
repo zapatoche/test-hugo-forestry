@@ -18,3 +18,18 @@
   top: 0;
   right: auto;
 }
+
+.logo em {
+  display: none;
+}
+.nav-item {
+  padding: 1em;
+}
+.nav-item.is-active  {
+  outline: solid 1px #000;
+}
+.nav-item.is-active a {
+  text-decoration: none;
+  pointer-events: none;
+  color: #000;
+}
