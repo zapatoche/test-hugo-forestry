@@ -5,7 +5,7 @@ title: "private classes"
 menu:
   main:
     name:  Private Classes
-    weight: -120
+    weight: 2
 
 ---
 

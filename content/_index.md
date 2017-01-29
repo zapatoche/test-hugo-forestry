@@ -4,6 +4,11 @@ title: Salsa Caribe
 tagline: Learn to dance with the Cuban Salsa specialists
 url: "index.html"
 
+menu:
+  main:
+    name: Classes & events
+    weight: 1
+
 ---
 
 ## Learn to dance with the Cuban salsa specialists

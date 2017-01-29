@@ -18,10 +18,10 @@ menu:
     #   weight: -160
     #   URL: /
     #   indentifier: home
-    - name: Classes & events
-      identifier: events
-      weight: -140
-      URL: '/'
+    # - name: Classes & events
+    #   identifier: events
+    #   weight: -140
+    #   URL: '/'
     # - name: Private classes
     #   identifier: private-classes
     #   Weight: -120
@@ -32,5 +32,5 @@ menu:
     #   URL: '/about/'
     - name: "Contact us"
       identifier: contact
-      weight: -100
+      weight: 4
       URL: '#contact'

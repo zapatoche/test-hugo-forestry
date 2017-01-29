@@ -5,7 +5,7 @@ title: All you ever wanted to know about Salsa Caribe
 menu:
   main:
     name: About us
-    weight: -120
+    weight: 3
 
 ---
 
