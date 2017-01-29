@@ -14,12 +14,23 @@ params:
 # Dynamic menus
 menu:
   main:
-    - Name: Classes & events
-      Weight: -120
+    # - Name: Salsa Caribe
+    #   weight: -160
+    #   URL: /
+    #   indentifier: home
+    - name: Classes & events
+      identifier: events
+      weight: -140
       URL: '/'
-    - Name: 'About us'
-      Weight: -110
-      URL: '/about/'
-    - Name: "Contact us"
-      Weight: -100
+    # - name: Private classes
+    #   identifier: private-classes
+    #   Weight: -120
+    #   URL: '/private-classes'
+    # - name: 'About us'
+    #   identifier: about
+    #   weight: -110
+    #   URL: '/about/'
+    - name: "Contact us"
+      identifier: contact
+      weight: -100
       URL: '#contact'
