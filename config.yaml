@@ -8,7 +8,7 @@ buildDraft: true
 watch: true
 
 params:
-  logo: Salsa Caribe
+  logo: Salsa Caribe _Productions_
   tagline: Learn to dance with the cuban salsa specialists
 
 # Dynamic menus
